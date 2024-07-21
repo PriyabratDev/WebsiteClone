@@ -1,1 +1,1 @@
-CultFit Clone
+Clone of Cult.fit
