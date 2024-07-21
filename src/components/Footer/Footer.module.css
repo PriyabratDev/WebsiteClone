@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  /* background-color: rgba(1, 1, 17, 0.905); */
+  /* color: rgba(1, 1, 17, 0.908); */
+  /* margin: auto; */
+  margin: 0;
+  padding: 0;
+}
+#SocialBox {
+  background-color: #000;
+  position: relative;
+  z-index: 3;
+  color: #cacaca;
+  font-family: Inter-Regular, Roboto, Helvetica, Arial, sans-serif;
+  display: grid;
+  justify-content: space-between;
+  text-align: left;
+  font-family: Inter-Regular, Roboto, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+#SocialLogo {
+  height: fit-content;
+}
+#SocialLogo > img {
+  width: 100%;
+}
+#intro {
+  text-align: left;
+  cursor: default;
+  margin: 0;
+  color: #cacaca;
+  font-size: 14px;
+  font-family: Inter-Regular, Roboto, Helvetica, Arial, sans-serif;
+  letter-spacing: 0.5px;
+  line-height: 22px;
+  width: 400px;
+  padding-top: 40px;
+}
+
+.LinkBox1,
+.LinkBox2 {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 7%;
+}
+#Links1,
+#Links2,
+#Links3 {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: space-between;
+}
+#Links4 {
+  height: 50%;
+}
+.Appstore {
+  margin: 5% 0px;
+  width: 70%;
+}
+.AppImage {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 5%;
+}
+#fiveblack {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  max-width: 350px;
+  flex-wrap: wrap;
+}
+
+.black {
+  height: 26px;
+  width: 26px;
+  margin: 5px;
+}
+
+@media (max-width: 768px) {
+  #intro {
+    display: none;
+  }
+  #SocialLogo {
+    width: 90px;
+  }
+  #brand {
+    grid-column: 1 / 3;
+    height: fit-content;
+  }
+  #SocialBox {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: fit-content(100%);
+    height: 405px;
+    padding: 40px 20px;
+    gap: 5%;
+  }
+  .Appstore {
+    margin-top: 2.5%;
+    height: 30%;
+    min-height: 40px;
+    margin-bottom: 0px;
+    min-width: 120px;
+  }
+  .AppImage {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (min-width: 769px) {
+  #SocialLogo {
+    width: 150px;
+  }
+  #SocialBox {
+    display: flex;
+    height: 435px;
+    padding: 100px 80px;
+    justify-content: space-evenly;
+  }
+  #intro {
+    width: clamp(350px, 100%, 400px);
+  }
+  #brand {
+    width: clamp(350px, 100%, 400px);
+  }
+  .LinkBox1 {
+    width: 20%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .LinkBox2 {
+    width: 25%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #Links1,
+  #Links2,
+  #Links3 {
+    height: 100%;
+    justify-content: space-between;
+  }
+  #Links4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .Appstore {
+    height: 50%;
+    margin-bottom: 5px;
+    width: 80%;
+  }
+  #fiveblack {
+    margin-top: 15%;
+  }
+}
