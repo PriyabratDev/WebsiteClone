@@ -3,6 +3,7 @@ import styles from "./mindFull.module.css";
 import axios from "axios";
 import DocterPopup from "../components/DocterPopup";
 import { useDisclosure } from "@chakra-ui/react";
+import doctorDB from './doctorDB.json';
 
 let token =
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2MzliM2ViMzVkY2EyODRkNGVkZmNjZWMiLCJpYXQiOjE2NzEzMzc4NDEsImV4cCI6MTY3MTc2OTg0MX0.gAyGngbn3cF5P1hv5kKD7O0aLjDdEuAmTtV04Q6Fu9g";
@@ -10,12 +11,11 @@ const Dcotors = ({ setc }) => {
   setc("#15171C");
 
   const [data, setData] = useState([]);
-  function getData() {
-    axios.defaults.headers.common["authorization"] = "Bearer " + token;
-    axios
-      .get("https://starter-express-api-nine.vercel.app/docter?limit=50")
-      .then((r) => setData(r.data));
-  }
+
+function getData() {
+  setData(doctorDB);
+}
+
   useEffect(() => getData(), []);
   const [id, sid] = useState("");
   const { isOpen, onOpen, onClose } = useDisclosure();
