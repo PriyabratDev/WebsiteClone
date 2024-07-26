@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+@import url(https://db.onlinewebfonts.com/c/47b83f8dbd3bf93e0df5674b32c6a7e4?family=Brandon+Text+Web+Regular);
+.hamburgerMenu * {
+  text-align: left;
+  font-family: "Brandon Text Web Regular", Roboto, Arial, sans-serif;
+}
+.hamburgerbutton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 50px;
+  width: 36px;
+  background-image: url("./hamburger.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+#Modallogo {
+  padding-left: 40px;
+  margin: 0;
+  height: 45px;
+  margin-bottom: 20px;
+}
+.ModalImg {
+  height: 45px;
+  width: 45px;
+}
+.menu,
+.menu2 {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.menulink {
+  text-align: left;
+  padding: 20px 10px 20px 40px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #ffffff;
+  width: 85%;
+  font-family: "Brandon Text Web Regular", Roboto, Arial, sans-serif;
+  text-align: left;
+  font-weight: 600;
+}
+.dropdownbutton {
+  background: none;
+  border: none;
+  padding: 20px 0 20px 40px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #ffffff;
+  width: 100%;
+  text-align: left;
+  font-family: "Brandon Text Web Regular", Roboto, Arial, sans-serif;
+  font-weight: 800;
+}
+.dropdown:has(.menulink) {
+  height: 63px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.dropdown:has(.Extralink) {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.Extralink {
+  font-family: "Brandon Text Web Regular", Roboto, Arial, sans-serif;
+  text-align: left;
+  max-width: 350px;
+  padding: 10px 40px;
+  height: 25px;
+  text-decoration: none;
+  color: #bdbdbd;
+  font-size: 16px;
+  font-weight: 800;
+}
+.menu2 > .dropdown {
+  border: none;
+  max-width: 350px;
+  height: 40px;
+}
+.dropdown {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #171717;
+  width: 80vw;
+  max-width: 350px;
+  height: auto;
+}
+.overLogin {
+  color: white;
+  opacity: 0.7;
+  font-size: 16px;
+  padding: 18px 0 2px 0;
+  text-decoration: none;
+  display: block;
+  height: 61px;
+  border-bottom: 1px solid #222222;
+  text-align: left;
+  font-family: "Brandon Text Web Regular", Roboto, Arial, sans-serif;
+  font-weight: 600;
+  position: absolute;
+  left: 40px;
+  cursor: pointer;
+}
+.overLogin:hover {
+  color: #0b54bf;
+}
+.OverLogin2 {
+  padding: 18px 0 2px 0;
+  position: absolute;
+  left: 40px;
+  height: 61px;
+  width: 40px;
+  display: block;
+  color: transparent;
+}
+.arrow {
+  position: absolute;
+  top: 45%;
+  left: 85%;
+  height: 7px;
+  width: 12px;
+  transition: transform 0.3s ease;
+}
+
+.arrow.rotate1 {
+  transform: rotate(180deg);
+  top: 10%;
+}
+
+.arrow.rotate {
+  transform: rotate(180deg);
+  top: 22.5%;
+}
+.dropdowncontent {
+  display: none;
+  background-color: #171717;
+  width: 100%;
+  height: auto;
+  min-height: 60px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-align: left;
+}
+
+.dropdowncontent .alink {
+  color: white;
+  opacity: 0.7;
+  font-size: 16px;
+  padding: 18px 0 2px 0;
+  text-decoration: none;
+  display: block;
+  height: 61px;
+  border-bottom: 1px solid #222222;
+  text-align: left;
+  font-family: "Brandon Text Web Regular", Roboto, Arial, sans-serif;
+  font-weight: 600;
+}
+
+.dropdowncontent.show {
+  padding-left: 60px;
+  display: flex;
+  flex-direction: column;
+}

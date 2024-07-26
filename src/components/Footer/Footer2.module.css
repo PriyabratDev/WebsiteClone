@@ -1,0 +1,50 @@
+@import url(https://db.onlinewebfonts.com/c/47b83f8dbd3bf93e0df5674b32c6a7e4?family=Brandon+Text+Web+Regular);
+* {
+  margin: 0;
+  padding: 0;
+}
+.footer {
+  width: 100%;
+  color: #a2a2a2;
+  font-size: 10px;
+  background-color: rgb(17, 18, 19);
+  padding: 30px 8px;
+}
+.title {
+  padding: 0px;
+  font-family: "Brandon Text Web Regular", Arial;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+}
+.itemBox {
+  display: grid;
+  justify-content: space-around;
+  padding: 0 8px;
+  gap: 0 10px;
+  text-align: left;
+}
+
+/* Columns in footer */
+.items {
+  width: 100%;
+  padding: 0 10px 0 0;
+}
+.FooterLink {
+  text-decoration: none;
+  font-family: "Brandon Text Web Regular", Arial;
+  font-size: 14px;
+  color: #a2a2a2;
+  font-weight: 500;
+}
+@media (max-width: 767px) {
+  .itemBox {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .itemBox {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}

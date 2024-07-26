@@ -1,0 +1,381 @@
+.mainbody {
+  margin-top: -60px;
+  margin-bottom: -10px;
+}
+.needs {
+  align-items: center;
+  width: 100%;
+  background-color: #15171c;
+  height: auto;
+  padding-bottom: 80px;
+}
+
+.b {
+  display: flex;
+  gap: 50px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+
+  height: 100%;
+}
+
+.b div > img {
+  width: 70%;
+  margin: auto;
+}
+.c img {
+  width: 33%;
+}
+.c {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  height: fit-content;
+}
+
+.d {
+  width: 33%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.f2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+
+  width: 65%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.f2 img {
+  width: 100%;
+
+  border-radius: 10px;
+}
+
+.f1 img {
+  width: 100%;
+
+  border-radius: 10px;
+}
+.f1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+
+  width: 65%;
+  margin: auto;
+  margin-top: 20px;
+}
+.video_frame {
+  position: relative;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  background-color: #15171c;
+}
+
+#v_bag {
+  display: block;
+  width: 100%;
+  transition: opacity 600ms ease 0s;
+  position: relative;
+  object-fit: cover;
+  height: 100vh;
+  will-change: transform;
+  opacity: 1;
+}
+
+.contant {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 200;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.contant > img {
+  position: absolute;
+  height: 45%;
+  width: 95%;
+  align-self: center;
+}
+.Button {
+  position: absolute;
+  top: 90%;
+  z-index: 300;
+  color: tomato;
+  width: 22.5%;
+  height: 4.5%;
+  border-radius: 50px;
+  background-color: white;
+  padding: 7px 17px 7px 17px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0px 0px 10px #ffffff67;
+  min-height: 55px;
+  align-self: center;
+}
+
+.pass {
+  position: relative;
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+  width: 75%;
+  margin: auto;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.pass div {
+  background: rgb(255 255 255 / 5%);
+  border: 1px solid rgb(255 255 255 / 20%);
+  flex-basis: 30%;
+  backdrop-filter: blur(50px);
+  border-radius: 10px;
+  padding: 25px 15px 20px;
+  transition: all 300ms ease;
+  cursor: pointer;
+  color: white;
+}
+.pro_box {
+  padding-top: 80px;
+  padding-bottom: 250px;
+}
+.pass p {
+  width: 75%;
+  height: 35px;
+  margin: auto;
+  font-family: "BrandonTextWeb-Regular";
+}
+.pass img {
+  margin: auto;
+  margin-bottom: 30px;
+  width: 40%;
+  height: 40px;
+}
+
+.mdiv {
+  position: relative;
+
+  width: 100%;
+}
+
+@media screen and (max-width: 1500px) {
+  #v_bag {
+    display: block;
+    width: 100%;
+    transition: opacity 600ms ease 0s;
+    position: relative;
+    object-fit: cover;
+    height: 110vh;
+    will-change: transform;
+    opacity: 1;
+  }
+
+  .contant {
+    min-height: 700px;
+  }
+  .contant > img {
+    height: 50%;
+    top: 15%;
+  }
+  .Button {
+    position: absolute;
+    top: 85%;
+    width: 40%;
+    height: 3.5%;
+    font-size: 24px;
+    border-radius: 10px;
+    min-height: 55px;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .mainbody {
+    margin-top: -100px;
+  }
+
+  #v_bag {
+    display: block;
+    width: 100%;
+    transition: opacity 600ms ease 0s;
+    position: relative;
+    object-fit: cover;
+    height: 100vh;
+    will-change: transform;
+    opacity: 1;
+  }
+
+  .contant {
+    min-height: 600px;
+  }
+
+  .contant > img {
+    top: 25%;
+  }
+
+  .Button {
+    position: absolute;
+    top: 90%;
+    width: 40%;
+    height: 3.5%;
+    font-size: 24px;
+    border-radius: 7px;
+    min-height: 55px;
+    align-self: center;
+  }
+
+  .pass {
+    width: 85%;
+  }
+  .pass div {
+    height: auto;
+  }
+  .pro_box {
+    padding-bottom: 200px;
+  }
+  .pass p {
+    width: 90%;
+    height: 100px;
+  }
+
+  /* ------------------------------- */
+
+  .b {
+    display: flex;
+    gap: 50px;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+
+    height: 100%;
+  }
+
+  .b div > img {
+    width: 80%;
+    margin: auto;
+  }
+
+  .f2 {
+    width: 70%;
+    margin-top: 25px;
+  }
+
+  .f2 img {
+    width: 100%;
+
+    border-radius: 10px;
+  }
+
+  .f1 {
+    gap: 20px;
+    width: 75%;
+    margin: auto;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contant {
+    min-height: 700px;
+  }
+
+  .Button {
+    position: absolute;
+    top: 92.5%;
+    width: 40%;
+    height: 3%;
+    font-size: 95%;
+    border-radius: 7px;
+    min-height: 55px;
+
+    align-self: center;
+  }
+}
+@media screen and (max-width: 790px) {
+  .video_frame {
+    margin-top: 55px;
+  }
+  .contant > img {
+    top: 30%;
+  }
+  .Button {
+    position: absolute;
+    top: 90%;
+    width: 40%;
+    height: 3%;
+    font-size: 100%;
+    border-radius: 7px;
+    min-height: 50px;
+    align-self: center;
+  }
+}
+@media screen and (max-width: 700px) {
+  .contant {
+    min-height: 600px;
+  }
+  .contant > img {
+    top: 30%;
+  }
+  .pass {
+    position: relative;
+    display: grid;
+
+    grid-template-columns: repeat(1, 1fr);
+    width: 75%;
+  }
+
+  .pro_box {
+    padding-top: 80px;
+    padding-bottom: 230px;
+  }
+  .pass p {
+    width: 85%;
+    height: 70px;
+  }
+  .mdiv {
+    min-width: 100%;
+  }
+  .b {
+    display: flex;
+    gap: 50px;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+
+    height: 100%;
+  }
+
+  .b div > img {
+    width: 80%;
+    margin: auto;
+  }
+
+  .f2 {
+    width: 93%;
+    gap: 10px;
+    margin-top: 25px;
+  }
+
+  .f1 {
+    width: 80%;
+    gap: 10px;
+    margin: auto;
+    margin-top: 30px;
+  }
+}
