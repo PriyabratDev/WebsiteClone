@@ -40,6 +40,9 @@ export default function Navbar({ c }) {
           <Link to="/doctor">
             <h5>DOCTOR</h5>
           </Link>
+          <Link to="/store">
+            <h5>STORE</h5>
+          </Link>
         </div>
        
 

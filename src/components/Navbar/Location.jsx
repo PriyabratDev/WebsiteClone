@@ -39,7 +39,7 @@ export const Location = () => {
         bg="none"
         _hover={{ bg: "none" }}
       >
-        {location || "Bhubanes..."} <LocationOnIcon marginLeft="20px" />
+        {location || "Bhuban..."} <LocationOnIcon marginLeft="20px" />
       </Button>
       <Modal isCentered isOpen={isOpen} onClose={onClose}>
         {overlay}

@@ -8,10 +8,9 @@ import TestSinglePage from "../pages/testSinglePage";
 import Admin from "../pages/Admin";
 import Dcotors from "../pages/Dcotors";
 import MindSinglePage from "../components/mind/MindSinglePage";
-import Cart from "../pages/Cart";
 import ProtectedRoute from "../PrivateRoute/ProtectedRoute";
 import { ProfileModal } from "../pages/User/Profile/ProfileModal";
-import { CheckoutPage } from "../pages/CheckoutPage";
+import { Store } from "../components/Store/store";
 
 export const Allroutes = ({ setc }) => {
   return (
@@ -24,9 +23,8 @@ export const Allroutes = ({ setc }) => {
         <Route 
         path="/cart" 
         element={
-          <ProtectedRoute>
-               <Cart setc={setc} />
-          </ProtectedRoute>
+          <div style={{ height: '1000px' ,paddingTop:"100px",fontSize:"40px"
+          }}>cart page</div>
        
         } />
         <Route path="/doctor" element={<Dcotors setc={setc} />} />
@@ -44,13 +42,10 @@ export const Allroutes = ({ setc }) => {
             </ProtectedRoute>
           }
         />
-
         <Route
-          path={"/checkout"}
+          path="/store"
           element={
-            <ProtectedRoute>
-              <CheckoutPage />
-            </ProtectedRoute>
+            <Store />
           }
         />
       </Routes>
